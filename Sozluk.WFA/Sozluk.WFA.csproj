@@ -53,14 +53,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="AnaMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AnaMenu.Designer.cs">
+      <DependentUpon>AnaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris.Designer.cs">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IslemSecim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IslemSecim.Designer.cs">
+      <DependentUpon>IslemSecim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KayitOlma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KayitOlma.Designer.cs">
+      <DependentUpon>KayitOlma.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AnaMenu.resx">
+      <DependentUpon>AnaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris.resx">
+      <DependentUpon>Giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IslemSecim.resx">
+      <DependentUpon>IslemSecim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KayitOlma.resx">
+      <DependentUpon>KayitOlma.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

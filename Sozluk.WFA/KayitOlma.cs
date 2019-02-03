@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Sozluk.WFA
 {
-    public partial class Form1 : Form
+    public partial class KayitOlma : Form
     {
-        public Form1()
+        public KayitOlma()
         {
             InitializeComponent();
         }
