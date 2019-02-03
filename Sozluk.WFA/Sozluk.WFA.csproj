@@ -59,6 +59,18 @@
     <Compile Include="AnaMenu.Designer.cs">
       <DependentUpon>AnaMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Duzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Duzenle.Designer.cs">
+      <DependentUpon>Duzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ekle.Designer.cs">
+      <DependentUpon>Ekle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Giris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +83,12 @@
     <Compile Include="IslemSecim.Designer.cs">
       <DependentUpon>IslemSecim.cs</DependentUpon>
     </Compile>
+    <Compile Include="KayitliGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KayitliGiris.Designer.cs">
+      <DependentUpon>KayitliGiris.cs</DependentUpon>
+    </Compile>
     <Compile Include="KayitOlma.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,14 +97,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SifremiUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SifremiUnuttum.Designer.cs">
+      <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sil.Designer.cs">
+      <DependentUpon>Sil.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AnaMenu.resx">
       <DependentUpon>AnaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Duzenle.resx">
+      <DependentUpon>Duzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ekle.resx">
+      <DependentUpon>Ekle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Giris.resx">
       <DependentUpon>Giris.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IslemSecim.resx">
       <DependentUpon>IslemSecim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KayitliGiris.resx">
+      <DependentUpon>KayitliGiris.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KayitOlma.resx">
       <DependentUpon>KayitOlma.cs</DependentUpon>
@@ -100,6 +139,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SifremiUnuttum.resx">
+      <DependentUpon>SifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sil.resx">
+      <DependentUpon>Sil.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
