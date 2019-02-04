@@ -71,6 +71,7 @@
             this.lblSifremiUnuttum.Size = new System.Drawing.Size(132, 17);
             this.lblSifremiUnuttum.TabIndex = 14;
             this.lblSifremiUnuttum.Text = "Şifremi Unuttum?";
+            this.lblSifremiUnuttum.Click += new System.EventHandler(this.lblSifremiUnuttum_Click);
             // 
             // btnGiris
             // 

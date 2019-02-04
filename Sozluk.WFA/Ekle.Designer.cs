@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.label4 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnGeri = new System.Windows.Forms.Button();
+            this.btnKaydet = new System.Windows.Forms.Button();
+            this.btnResimSec = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtAnlam = new System.Windows.Forms.TextBox();
+            this.txtKelime = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -48,39 +48,43 @@
             this.label4.Size = new System.Drawing.Size(17, 17);
             this.label4.TabIndex = 37;
             this.label4.Text = "X";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // button3
+            // btnGeri
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Location = new System.Drawing.Point(74, 320);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(207, 46);
-            this.button3.TabIndex = 36;
-            this.button3.Text = "Geri";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnGeri.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGeri.Location = new System.Drawing.Point(74, 320);
+            this.btnGeri.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGeri.Name = "btnGeri";
+            this.btnGeri.Size = new System.Drawing.Size(207, 46);
+            this.btnGeri.TabIndex = 36;
+            this.btnGeri.Text = "Geri";
+            this.btnGeri.UseVisualStyleBackColor = true;
+            this.btnGeri.Click += new System.EventHandler(this.btnGeri_Click);
             // 
-            // button2
+            // btnKaydet
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(74, 273);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(208, 41);
-            this.button2.TabIndex = 35;
-            this.button2.Text = "Kaydet";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnKaydet.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnKaydet.Location = new System.Drawing.Point(74, 273);
+            this.btnKaydet.Margin = new System.Windows.Forms.Padding(4);
+            this.btnKaydet.Name = "btnKaydet";
+            this.btnKaydet.Size = new System.Drawing.Size(208, 41);
+            this.btnKaydet.TabIndex = 35;
+            this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.UseVisualStyleBackColor = true;
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
-            // button1
+            // btnResimSec
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(79, 215);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 34);
-            this.button1.TabIndex = 34;
-            this.button1.Text = "Seç";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnResimSec.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnResimSec.Location = new System.Drawing.Point(79, 215);
+            this.btnResimSec.Margin = new System.Windows.Forms.Padding(4);
+            this.btnResimSec.Name = "btnResimSec";
+            this.btnResimSec.Size = new System.Drawing.Size(115, 34);
+            this.btnResimSec.TabIndex = 34;
+            this.btnResimSec.Text = "Seç";
+            this.btnResimSec.UseVisualStyleBackColor = true;
+            this.btnResimSec.Click += new System.EventHandler(this.btnResimSec_Click);
             // 
             // label3
             // 
@@ -92,22 +96,22 @@
             this.label3.TabIndex = 33;
             this.label3.Text = "Resim:";
             // 
-            // textBox3
+            // txtAnlam
             // 
-            this.textBox3.Location = new System.Drawing.Point(78, 76);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(204, 123);
-            this.textBox3.TabIndex = 32;
+            this.txtAnlam.Location = new System.Drawing.Point(78, 76);
+            this.txtAnlam.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAnlam.Multiline = true;
+            this.txtAnlam.Name = "txtAnlam";
+            this.txtAnlam.Size = new System.Drawing.Size(204, 123);
+            this.txtAnlam.TabIndex = 32;
             // 
-            // textBox2
+            // txtKelime
             // 
-            this.textBox2.Location = new System.Drawing.Point(78, 38);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(204, 22);
-            this.textBox2.TabIndex = 31;
+            this.txtKelime.Location = new System.Drawing.Point(78, 38);
+            this.txtKelime.Margin = new System.Windows.Forms.Padding(4);
+            this.txtKelime.Name = "txtKelime";
+            this.txtKelime.Size = new System.Drawing.Size(204, 22);
+            this.txtKelime.TabIndex = 31;
             // 
             // label2
             // 
@@ -136,12 +140,12 @@
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(323, 375);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnGeri);
+            this.Controls.Add(this.btnKaydet);
+            this.Controls.Add(this.btnResimSec);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtAnlam);
+            this.Controls.Add(this.txtKelime);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -156,12 +160,12 @@
         #endregion
 
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnGeri;
+        private System.Windows.Forms.Button btnKaydet;
+        private System.Windows.Forms.Button btnResimSec;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtAnlam;
+        private System.Windows.Forms.TextBox txtKelime;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
     }

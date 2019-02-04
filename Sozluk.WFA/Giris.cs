@@ -61,5 +61,12 @@ namespace Sozluk.WFA
                 this.Hide();
             }
         }
+
+        private void lblSifremiUnuttum_Click(object sender, EventArgs e)
+        {
+            SifremiUnuttum sifremiUnuttum = new SifremiUnuttum();
+            sifremiUnuttum.Show();
+            this.Hide();
+        }
     }
 }

@@ -45,6 +45,7 @@
             this.label3.Size = new System.Drawing.Size(17, 17);
             this.label3.TabIndex = 11;
             this.label3.Text = "X";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // btnSorgula
             // 
@@ -56,6 +57,7 @@
             this.btnSorgula.TabIndex = 10;
             this.btnSorgula.Text = "Sorgula";
             this.btnSorgula.UseVisualStyleBackColor = true;
+            this.btnSorgula.Click += new System.EventHandler(this.btnSorgula_Click);
             // 
             // label2
             // 

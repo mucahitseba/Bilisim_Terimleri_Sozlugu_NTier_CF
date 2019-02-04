@@ -29,5 +29,12 @@ namespace Sozluk.WFA
 
             }
         }
+
+        private void btnGirisYap_Click(object sender, EventArgs e)
+        {
+            Giris giris = new Giris();
+            giris.Show();
+            this.Hide();
+        }
     }
 }
