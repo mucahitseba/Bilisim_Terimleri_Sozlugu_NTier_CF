@@ -49,6 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\KelimeRepo.cs" />
+    <Compile Include="Repository\KullaniciRepo.cs" />
+    <Compile Include="Repository\RepositoryBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Sozluk.DAL\Sozluk.DAL.csproj">

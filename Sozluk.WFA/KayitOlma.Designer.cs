@@ -29,31 +29,32 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KayitOlma));
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnGeri = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnKayitOl = new System.Windows.Forms.Button();
+            this.txtCevap = new System.Windows.Forms.TextBox();
+            this.dtDogumTarihi = new System.Windows.Forms.DateTimePicker();
+            this.txtMeslek = new System.Windows.Forms.TextBox();
+            this.txtSoyad = new System.Windows.Forms.TextBox();
+            this.txtAd = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblCikis = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button2
+            // btnGeri
             // 
-            this.button2.BackColor = System.Drawing.Color.LightGreen;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(85, 417);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(174, 41);
-            this.button2.TabIndex = 43;
-            this.button2.Text = "Geri";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnGeri.BackColor = System.Drawing.Color.LightGreen;
+            this.btnGeri.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGeri.Location = new System.Drawing.Point(85, 417);
+            this.btnGeri.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGeri.Name = "btnGeri";
+            this.btnGeri.Size = new System.Drawing.Size(174, 41);
+            this.btnGeri.TabIndex = 43;
+            this.btnGeri.Text = "Geri";
+            this.btnGeri.UseVisualStyleBackColor = false;
+            this.btnGeri.Click += new System.EventHandler(this.btnGeri_Click);
             // 
             // pictureBox2
             // 
@@ -66,77 +67,78 @@
             this.pictureBox2.TabIndex = 42;
             this.pictureBox2.TabStop = false;
             // 
-            // button1
+            // btnKayitOl
             // 
-            this.button1.BackColor = System.Drawing.Color.Lime;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(86, 368);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 41);
-            this.button1.TabIndex = 41;
-            this.button1.Text = "Kayıt Ol";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnKayitOl.BackColor = System.Drawing.Color.Lime;
+            this.btnKayitOl.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnKayitOl.Location = new System.Drawing.Point(86, 368);
+            this.btnKayitOl.Margin = new System.Windows.Forms.Padding(4);
+            this.btnKayitOl.Name = "btnKayitOl";
+            this.btnKayitOl.Size = new System.Drawing.Size(173, 41);
+            this.btnKayitOl.TabIndex = 41;
+            this.btnKayitOl.Text = "Kayıt Ol";
+            this.btnKayitOl.UseVisualStyleBackColor = false;
+            this.btnKayitOl.Click += new System.EventHandler(this.btnKayitOl_Click);
             // 
-            // textBox4
+            // txtCevap
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Gill Sans MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox4.Location = new System.Drawing.Point(84, 335);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(195, 19);
-            this.textBox4.TabIndex = 40;
-            this.textBox4.Text = "En Sevdiğiniz Hayvan?";
+            this.txtCevap.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.txtCevap.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCevap.Font = new System.Drawing.Font("Gill Sans MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCevap.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtCevap.Location = new System.Drawing.Point(84, 335);
+            this.txtCevap.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCevap.Name = "txtCevap";
+            this.txtCevap.Size = new System.Drawing.Size(195, 19);
+            this.txtCevap.TabIndex = 40;
+            this.txtCevap.Text = "En Sevdiğiniz Hayvan?";
             // 
-            // dateTimePicker1
+            // dtDogumTarihi
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Gill Sans MT", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(84, 303);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(173, 25);
-            this.dateTimePicker1.TabIndex = 39;
+            this.dtDogumTarihi.Font = new System.Drawing.Font("Gill Sans MT", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtDogumTarihi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtDogumTarihi.Location = new System.Drawing.Point(84, 303);
+            this.dtDogumTarihi.Margin = new System.Windows.Forms.Padding(4);
+            this.dtDogumTarihi.Name = "dtDogumTarihi";
+            this.dtDogumTarihi.Size = new System.Drawing.Size(173, 25);
+            this.dtDogumTarihi.TabIndex = 39;
             // 
-            // textBox3
+            // txtMeslek
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Gill Sans MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox3.Location = new System.Drawing.Point(84, 270);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(173, 19);
-            this.textBox3.TabIndex = 38;
-            this.textBox3.Text = "Meslek";
+            this.txtMeslek.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMeslek.Font = new System.Drawing.Font("Gill Sans MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMeslek.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtMeslek.Location = new System.Drawing.Point(84, 270);
+            this.txtMeslek.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMeslek.Name = "txtMeslek";
+            this.txtMeslek.Size = new System.Drawing.Size(173, 19);
+            this.txtMeslek.TabIndex = 38;
+            this.txtMeslek.Text = "Meslek";
             // 
-            // textBox2
+            // txtSoyad
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Gill Sans MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox2.Location = new System.Drawing.Point(85, 235);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(172, 19);
-            this.textBox2.TabIndex = 37;
-            this.textBox2.Text = "Soyad";
+            this.txtSoyad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSoyad.Font = new System.Drawing.Font("Gill Sans MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoyad.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtSoyad.Location = new System.Drawing.Point(85, 235);
+            this.txtSoyad.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSoyad.Name = "txtSoyad";
+            this.txtSoyad.Size = new System.Drawing.Size(172, 19);
+            this.txtSoyad.TabIndex = 37;
+            this.txtSoyad.Text = "Soyad";
             // 
-            // textBox1
+            // txtAd
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Gill Sans MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox1.Location = new System.Drawing.Point(86, 198);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(171, 19);
-            this.textBox1.TabIndex = 36;
-            this.textBox1.Text = "Ad";
+            this.txtAd.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.txtAd.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAd.Font = new System.Drawing.Font("Gill Sans MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAd.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtAd.Location = new System.Drawing.Point(86, 198);
+            this.txtAd.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAd.Name = "txtAd";
+            this.txtAd.Size = new System.Drawing.Size(171, 19);
+            this.txtAd.TabIndex = 36;
+            this.txtAd.Text = "Ad";
             // 
             // pictureBox1
             // 
@@ -165,14 +167,14 @@
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(323, 466);
             this.Controls.Add(this.lblCikis);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnGeri);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnKayitOl);
+            this.Controls.Add(this.txtCevap);
+            this.Controls.Add(this.dtDogumTarihi);
+            this.Controls.Add(this.txtMeslek);
+            this.Controls.Add(this.txtSoyad);
+            this.Controls.Add(this.txtAd);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "KayitOlma";
@@ -187,14 +189,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnGeri;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnKayitOl;
+        private System.Windows.Forms.TextBox txtCevap;
+        private System.Windows.Forms.DateTimePicker dtDogumTarihi;
+        private System.Windows.Forms.TextBox txtMeslek;
+        private System.Windows.Forms.TextBox txtSoyad;
+        private System.Windows.Forms.TextBox txtAd;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblCikis;
     }

@@ -58,6 +58,7 @@
             this.btnDevam.TabIndex = 15;
             this.btnDevam.Text = ">Devam Et..";
             this.btnDevam.UseVisualStyleBackColor = false;
+            this.btnDevam.Click += new System.EventHandler(this.btnDevam_Click);
             // 
             // lblSifremiUnuttum
             // 
@@ -84,6 +85,7 @@
             this.btnGiris.TabIndex = 13;
             this.btnGiris.Text = "Giriş";
             this.btnGiris.UseVisualStyleBackColor = false;
+            this.btnGiris.Click += new System.EventHandler(this.btnGiris_Click);
             // 
             // btnKayit
             // 
@@ -101,6 +103,7 @@
             this.btnKayit.TabIndex = 12;
             this.btnKayit.Text = "Kayıt Ol";
             this.btnKayit.UseVisualStyleBackColor = false;
+            this.btnKayit.Click += new System.EventHandler(this.btnKayit_Click);
             // 
             // txtSifre
             // 

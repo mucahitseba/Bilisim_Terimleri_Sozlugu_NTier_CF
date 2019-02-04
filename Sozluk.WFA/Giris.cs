@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Sozluk.BLL.Repository;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,6 +28,37 @@ namespace Sozluk.WFA
             if (a == DialogResult.No)
             {
 
+            }
+        }
+
+        private void btnKayit_Click(object sender, EventArgs e)
+        {
+            KayitOlma kayitOlma = new KayitOlma();
+            kayitOlma.Show();
+            this.Hide();
+        }
+
+        private void btnDevam_Click(object sender, EventArgs e)
+        {
+            AnaMenu anaMenu = new AnaMenu();
+            anaMenu.Show();
+            this.Hide();
+        }
+
+        private void btnGiris_Click(object sender, EventArgs e)
+        {
+            var kullanici = new KullaniciRepo().GetAll().Find(x => x.KullaniciAdi == txtKullaniciAdi.Text && x.Sifre == txtSifre.Text);
+            if (kullanici == null)
+            {
+                MessageBox.Show("Kullanıcı Adı veya şifre Hatalı");
+            }
+            else
+            {
+                kullanici.AktifMi = true;
+                new KullaniciRepo().Update();
+                KayitliGiris kayitliGiris = new KayitliGiris();
+                kayitliGiris.Show();
+                this.Hide();
             }
         }
     }
