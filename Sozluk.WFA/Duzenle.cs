@@ -99,7 +99,8 @@ namespace Sozluk.WFA
                 Kelime seciliKelime = (Kelime)lstKelimeler.SelectedItem;
                 seciliKelime.Sozcuk = txtSozcuk.Text;
                 seciliKelime.SozcukAnlami = txtAnlam.Text;
-                seciliKelime.ResimYolu = Yer;
+                new KelimeRepo().Update();
+                seciliKelime.ResimYolu = new KelimeRepo().GetById(kelime.KelimeId).ResimYolu;
                 new KelimeRepo().Update();
                 MessageBox.Show("Kelime güncelleme işlemi başarılı");
             }
@@ -110,6 +111,17 @@ namespace Sozluk.WFA
             }
             KelimeleriGetir();
             
+        }
+
+        private void txtAra_KeyUp(object sender, KeyEventArgs e)
+        {
+            string ara = txtAra.Text.ToLower();
+            List<Kelime> kelimeler = new List<Kelime>();
+            new KelimeRepo().Queryable().Where(x => x.Sozcuk.ToLower().Contains(ara)).ToList().ForEach(x => kelimeler.Add(new Kelime()
+            {
+                Sozcuk = x.Sozcuk
+            }));
+            lstKelimeler.DataSource = kelimeler;
         }
     }
 }

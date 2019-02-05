@@ -33,6 +33,7 @@
             this.pbResim = new System.Windows.Forms.PictureBox();
             this.txtAra = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lstKelimeler = new System.Windows.Forms.ListBox();
             this.lblCikis = new System.Windows.Forms.Label();
             this.btnGirisYap = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -44,7 +45,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtAnlam = new System.Windows.Forms.TextBox();
-            this.lstKelimeler = new System.Windows.Forms.ListBox();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbResim)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -88,6 +88,7 @@
             this.txtAra.Name = "txtAra";
             this.txtAra.Size = new System.Drawing.Size(211, 30);
             this.txtAra.TabIndex = 16;
+            this.txtAra.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtAra_KeyUp);
             // 
             // groupBox1
             // 
@@ -102,6 +103,16 @@
             this.groupBox1.TabIndex = 15;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "              Kelime Adı                    ";
+            // 
+            // lstKelimeler
+            // 
+            this.lstKelimeler.FormattingEnabled = true;
+            this.lstKelimeler.ItemHeight = 23;
+            this.lstKelimeler.Location = new System.Drawing.Point(7, 29);
+            this.lstKelimeler.Name = "lstKelimeler";
+            this.lstKelimeler.Size = new System.Drawing.Size(275, 303);
+            this.lstKelimeler.TabIndex = 40;
+            this.lstKelimeler.SelectedIndexChanged += new System.EventHandler(this.lstKelimeler_SelectedIndexChanged);
             // 
             // lblCikis
             // 
@@ -231,16 +242,6 @@
             this.txtAnlam.Name = "txtAnlam";
             this.txtAnlam.Size = new System.Drawing.Size(271, 310);
             this.txtAnlam.TabIndex = 0;
-            // 
-            // lstKelimeler
-            // 
-            this.lstKelimeler.FormattingEnabled = true;
-            this.lstKelimeler.ItemHeight = 23;
-            this.lstKelimeler.Location = new System.Drawing.Point(7, 29);
-            this.lstKelimeler.Name = "lstKelimeler";
-            this.lstKelimeler.Size = new System.Drawing.Size(275, 303);
-            this.lstKelimeler.TabIndex = 40;
-            this.lstKelimeler.SelectedIndexChanged += new System.EventHandler(this.lstKelimeler_SelectedIndexChanged);
             // 
             // AnaMenu
             // 

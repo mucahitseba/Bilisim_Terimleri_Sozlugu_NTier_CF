@@ -56,5 +56,16 @@ namespace Sozluk.WFA
             pbResim.Image = Image.FromFile(new KelimeRepo().GetById(kelime.KelimeId).ResimYolu);
             pbResim.SizeMode = PictureBoxSizeMode.StretchImage;
         }
+
+        private void txtAra_KeyUp(object sender, KeyEventArgs e)
+        {
+            
+            string ara = txtAra.Text.ToLower();
+            List<Kelime> kelimeler = new List<Kelime>();
+            new KelimeRepo().Queryable().Where(x => x.Sozcuk.ToLower().Contains(ara)).ToList().ForEach(x => kelimeler.Add(new Kelime(){
+                Sozcuk=x.Sozcuk
+            }));
+            lstKelimeler.DataSource = kelimeler;
+        }
     }
 }
