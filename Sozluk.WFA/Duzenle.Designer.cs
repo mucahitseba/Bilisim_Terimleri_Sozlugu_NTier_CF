@@ -30,25 +30,24 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Duzenle));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.pbResim = new System.Windows.Forms.PictureBox();
+            this.btnGeri = new System.Windows.Forms.Button();
+            this.btnGuncelle = new System.Windows.Forms.Button();
+            this.btnResimSec = new System.Windows.Forms.Button();
+            this.txtSozcuk = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtAra = new System.Windows.Forms.TextBox();
+            this.lblCikis = new System.Windows.Forms.Label();
+            this.txtAnlam = new System.Windows.Forms.TextBox();
+            this.lstKelimeler = new System.Windows.Forms.ListBox();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbResim)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.pictureBox1);
+            this.groupBox3.Controls.Add(this.pbResim);
             this.groupBox3.Font = new System.Drawing.Font("Gill Sans MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.groupBox3.Location = new System.Drawing.Point(492, 27);
@@ -60,62 +59,65 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "                  Resim                    ";
             // 
-            // pictureBox1
+            // pbResim
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 49);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(261, 207);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pbResim.Location = new System.Drawing.Point(12, 49);
+            this.pbResim.Margin = new System.Windows.Forms.Padding(4);
+            this.pbResim.Name = "pbResim";
+            this.pbResim.Size = new System.Drawing.Size(261, 207);
+            this.pbResim.TabIndex = 0;
+            this.pbResim.TabStop = false;
             // 
-            // button3
+            // btnGeri
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Location = new System.Drawing.Point(273, 285);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(211, 44);
-            this.button3.TabIndex = 26;
-            this.button3.Text = "Geri";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnGeri.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGeri.Location = new System.Drawing.Point(273, 285);
+            this.btnGeri.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGeri.Name = "btnGeri";
+            this.btnGeri.Size = new System.Drawing.Size(211, 44);
+            this.btnGeri.TabIndex = 26;
+            this.btnGeri.Text = "Geri";
+            this.btnGeri.UseVisualStyleBackColor = true;
+            this.btnGeri.Click += new System.EventHandler(this.btnGeri_Click);
             // 
-            // button2
+            // btnGuncelle
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(273, 237);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(211, 44);
-            this.button2.TabIndex = 25;
-            this.button2.Text = "Kaydet";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnGuncelle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGuncelle.Location = new System.Drawing.Point(273, 237);
+            this.btnGuncelle.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGuncelle.Name = "btnGuncelle";
+            this.btnGuncelle.Size = new System.Drawing.Size(211, 44);
+            this.btnGuncelle.TabIndex = 25;
+            this.btnGuncelle.Text = "Güncelle";
+            this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
-            // button1
+            // btnResimSec
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(273, 191);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(211, 44);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Resmi Seç";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnResimSec.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnResimSec.Location = new System.Drawing.Point(273, 191);
+            this.btnResimSec.Margin = new System.Windows.Forms.Padding(4);
+            this.btnResimSec.Name = "btnResimSec";
+            this.btnResimSec.Size = new System.Drawing.Size(211, 44);
+            this.btnResimSec.TabIndex = 24;
+            this.btnResimSec.Text = "Resmi Seç";
+            this.btnResimSec.UseVisualStyleBackColor = true;
+            this.btnResimSec.Click += new System.EventHandler(this.btnResimSec_Click);
             // 
-            // textBox2
+            // txtSozcuk
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Gill Sans MT", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(273, 27);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(211, 30);
-            this.textBox2.TabIndex = 22;
-            this.textBox2.Text = "Kelime Adı";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSozcuk.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtSozcuk.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSozcuk.Font = new System.Drawing.Font("Gill Sans MT", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSozcuk.ForeColor = System.Drawing.Color.White;
+            this.txtSozcuk.Location = new System.Drawing.Point(273, 27);
+            this.txtSozcuk.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSozcuk.Multiline = true;
+            this.txtSozcuk.Name = "txtSozcuk";
+            this.txtSozcuk.Size = new System.Drawing.Size(211, 30);
+            this.txtSozcuk.TabIndex = 22;
+            this.txtSozcuk.Text = "Kelime Adı";
+            this.txtSozcuk.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox2
             // 
@@ -128,53 +130,53 @@
             this.pictureBox2.TabIndex = 21;
             this.pictureBox2.TabStop = false;
             // 
-            // textBox1
+            // txtAra
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox1.Location = new System.Drawing.Point(53, 27);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(211, 30);
-            this.textBox1.TabIndex = 20;
+            this.txtAra.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtAra.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAra.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtAra.Location = new System.Drawing.Point(53, 27);
+            this.txtAra.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAra.Multiline = true;
+            this.txtAra.Name = "txtAra";
+            this.txtAra.Size = new System.Drawing.Size(211, 30);
+            this.txtAra.TabIndex = 20;
             // 
-            // dataGridView1
+            // lblCikis
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.LightGray;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(9, 70);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(255, 260);
-            this.dataGridView1.TabIndex = 19;
+            this.lblCikis.AutoSize = true;
+            this.lblCikis.Location = new System.Drawing.Point(782, 6);
+            this.lblCikis.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCikis.Name = "lblCikis";
+            this.lblCikis.Size = new System.Drawing.Size(17, 17);
+            this.lblCikis.TabIndex = 28;
+            this.lblCikis.Text = "X";
+            this.lblCikis.Click += new System.EventHandler(this.lblCikis_Click);
             // 
-            // label1
+            // txtAnlam
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(782, 6);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(17, 17);
-            this.label1.TabIndex = 28;
-            this.label1.Text = "X";
+            this.txtAnlam.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtAnlam.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAnlam.Font = new System.Drawing.Font("Gill Sans MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAnlam.ForeColor = System.Drawing.Color.White;
+            this.txtAnlam.Location = new System.Drawing.Point(273, 64);
+            this.txtAnlam.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAnlam.Multiline = true;
+            this.txtAnlam.Name = "txtAnlam";
+            this.txtAnlam.Size = new System.Drawing.Size(211, 119);
+            this.txtAnlam.TabIndex = 23;
+            this.txtAnlam.Text = "Kelime Anlamı";
+            this.txtAnlam.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox3
+            // lstKelimeler
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Gill Sans MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(273, 64);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(211, 119);
-            this.textBox3.TabIndex = 23;
-            this.textBox3.Text = "Kelime Anlamı";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.lstKelimeler.FormattingEnabled = true;
+            this.lstKelimeler.ItemHeight = 16;
+            this.lstKelimeler.Location = new System.Drawing.Point(8, 64);
+            this.lstKelimeler.Name = "lstKelimeler";
+            this.lstKelimeler.Size = new System.Drawing.Size(258, 228);
+            this.lstKelimeler.TabIndex = 40;
+            this.lstKelimeler.SelectedIndexChanged += new System.EventHandler(this.lstKelimeler_SelectedIndexChanged);
             // 
             // Duzenle
             // 
@@ -182,24 +184,24 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(807, 336);
+            this.Controls.Add(this.lstKelimeler);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.btnGeri);
+            this.Controls.Add(this.btnGuncelle);
+            this.Controls.Add(this.btnResimSec);
+            this.Controls.Add(this.txtSozcuk);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtAra);
+            this.Controls.Add(this.lblCikis);
+            this.Controls.Add(this.txtAnlam);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Duzenle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Duzenle";
+            this.Load += new System.EventHandler(this.Duzenle_Load);
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbResim)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,15 +210,15 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.PictureBox pbResim;
+        private System.Windows.Forms.Button btnGeri;
+        private System.Windows.Forms.Button btnGuncelle;
+        private System.Windows.Forms.Button btnResimSec;
+        private System.Windows.Forms.TextBox txtSozcuk;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtAra;
+        private System.Windows.Forms.Label lblCikis;
+        private System.Windows.Forms.TextBox txtAnlam;
+        private System.Windows.Forms.ListBox lstKelimeler;
     }
 }

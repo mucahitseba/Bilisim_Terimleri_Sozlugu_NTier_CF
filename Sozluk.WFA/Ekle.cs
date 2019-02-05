@@ -20,18 +20,7 @@ namespace Sozluk.WFA
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-            DialogResult a = MessageBox.Show("Uygulamadan Çıkmak İstediğinize Emin Misiniz?", "Çıkış", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (a == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
-            if (a == DialogResult.No)
-            {
-
-            }
-        }
+        
 
         private void btnGeri_Click(object sender, EventArgs e)
         {
@@ -106,6 +95,18 @@ namespace Sozluk.WFA
                 MessageBox.Show(Yer);
             }
         }
-        
+
+        private void lblCikis_Click(object sender, EventArgs e)
+        {
+            DialogResult a = MessageBox.Show("Uygulamadan Çıkmak İstediğinize Emin Misiniz?", "Çıkış", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (a == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            if (a == DialogResult.No)
+            {
+
+            }
+        }
     }
 }

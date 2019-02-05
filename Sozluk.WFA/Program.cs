@@ -16,7 +16,7 @@ namespace Sozluk.WFA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Ekle());
+            Application.Run(new Giris());
         }
     }
 }

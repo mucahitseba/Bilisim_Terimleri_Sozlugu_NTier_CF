@@ -21,6 +21,7 @@ namespace Sozluk.MODELS.Entities
         public int KullaniciId { get; set; }
         [ForeignKey("KullaniciId")]
         public virtual Kullanici kullanici { get; set; }
+        public override string ToString() => $"{Sozcuk}";
 
 
     }

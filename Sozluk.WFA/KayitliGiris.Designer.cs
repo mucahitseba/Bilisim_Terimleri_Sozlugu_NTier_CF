@@ -31,26 +31,25 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KayitliGiris));
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnIslemSecim = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtAnlam = new System.Windows.Forms.TextBox();
+            this.txtAra = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.pbResim = new System.Windows.Forms.PictureBox();
+            this.lblCikis = new System.Windows.Forms.Label();
+            this.btnCikis = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.lstKelimeler = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbResim)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,17 +74,6 @@
             this.label3.Size = new System.Drawing.Size(95, 25);
             this.label3.TabIndex = 35;
             this.label3.Text = "Sözlügü";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.LightGray;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(9, 27);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(268, 311);
-            this.dataGridView1.TabIndex = 0;
             // 
             // label2
             // 
@@ -122,18 +110,19 @@
             this.pictureBox3.TabIndex = 32;
             this.pictureBox3.TabStop = false;
             // 
-            // button1
+            // btnIslemSecim
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Gill Sans MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.button1.Location = new System.Drawing.Point(653, 32);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(220, 43);
-            this.button1.TabIndex = 31;
-            this.button1.Text = "Ekle/Çıkar/Düzenle";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnIslemSecim.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnIslemSecim.Font = new System.Drawing.Font("Gill Sans MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIslemSecim.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnIslemSecim.Location = new System.Drawing.Point(653, 32);
+            this.btnIslemSecim.Margin = new System.Windows.Forms.Padding(4);
+            this.btnIslemSecim.Name = "btnIslemSecim";
+            this.btnIslemSecim.Size = new System.Drawing.Size(220, 43);
+            this.btnIslemSecim.TabIndex = 31;
+            this.btnIslemSecim.Text = "Ekle/Çıkar/Düzenle";
+            this.btnIslemSecim.UseVisualStyleBackColor = true;
+            this.btnIslemSecim.Click += new System.EventHandler(this.btnIslemSecim_Click);
             // 
             // pictureBox2
             // 
@@ -148,7 +137,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.txtAnlam);
             this.groupBox2.Font = new System.Drawing.Font("Gill Sans MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.groupBox2.Location = new System.Drawing.Point(314, 96);
@@ -160,30 +149,31 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "                 Anlamı                    ";
             // 
-            // textBox2
+            // txtAnlam
             // 
-            this.textBox2.Location = new System.Drawing.Point(8, 28);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(271, 310);
-            this.textBox2.TabIndex = 0;
+            this.txtAnlam.Location = new System.Drawing.Point(8, 28);
+            this.txtAnlam.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAnlam.Multiline = true;
+            this.txtAnlam.Name = "txtAnlam";
+            this.txtAnlam.Size = new System.Drawing.Size(271, 310);
+            this.txtAnlam.TabIndex = 0;
             // 
-            // textBox1
+            // txtAra
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBox1.Location = new System.Drawing.Point(74, 51);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(211, 30);
-            this.textBox1.TabIndex = 28;
+            this.txtAra.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.txtAra.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAra.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txtAra.Location = new System.Drawing.Point(74, 51);
+            this.txtAra.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAra.Multiline = true;
+            this.txtAra.Name = "txtAra";
+            this.txtAra.Size = new System.Drawing.Size(211, 30);
+            this.txtAra.TabIndex = 28;
+            this.txtAra.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtAra_KeyUp);
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.pictureBox1);
+            this.groupBox3.Controls.Add(this.pbResim);
             this.groupBox3.Font = new System.Drawing.Font("Gill Sans MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.groupBox3.Location = new System.Drawing.Point(610, 96);
@@ -195,41 +185,43 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "                  Resim                    ";
             // 
-            // pictureBox1
+            // pbResim
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 49);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(261, 207);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pbResim.Location = new System.Drawing.Point(12, 49);
+            this.pbResim.Margin = new System.Windows.Forms.Padding(4);
+            this.pbResim.Name = "pbResim";
+            this.pbResim.Size = new System.Drawing.Size(261, 207);
+            this.pbResim.TabIndex = 0;
+            this.pbResim.TabStop = false;
             // 
-            // label5
+            // lblCikis
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(906, 4);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(17, 17);
-            this.label5.TabIndex = 38;
-            this.label5.Text = "X";
+            this.lblCikis.AutoSize = true;
+            this.lblCikis.Location = new System.Drawing.Point(906, 4);
+            this.lblCikis.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCikis.Name = "lblCikis";
+            this.lblCikis.Size = new System.Drawing.Size(17, 17);
+            this.lblCikis.TabIndex = 38;
+            this.lblCikis.Text = "X";
+            this.lblCikis.Click += new System.EventHandler(this.lblCikis_Click);
             // 
-            // button2
+            // btnCikis
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Gill Sans MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.button2.Location = new System.Drawing.Point(612, 390);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(285, 65);
-            this.button2.TabIndex = 36;
-            this.button2.Text = "Çıkış Yap";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCikis.Font = new System.Drawing.Font("Gill Sans MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCikis.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.btnCikis.Location = new System.Drawing.Point(612, 390);
+            this.btnCikis.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCikis.Name = "btnCikis";
+            this.btnCikis.Size = new System.Drawing.Size(285, 65);
+            this.btnCikis.TabIndex = 36;
+            this.btnCikis.Text = "Çıkış Yap";
+            this.btnCikis.UseVisualStyleBackColor = true;
+            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dataGridView1);
+            this.groupBox1.Controls.Add(this.lstKelimeler);
             this.groupBox1.Font = new System.Drawing.Font("Gill Sans MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.groupBox1.Location = new System.Drawing.Point(18, 96);
@@ -240,6 +232,16 @@
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "              Kelime Adı                    ";
+            // 
+            // lstKelimeler
+            // 
+            this.lstKelimeler.FormattingEnabled = true;
+            this.lstKelimeler.ItemHeight = 23;
+            this.lstKelimeler.Location = new System.Drawing.Point(7, 28);
+            this.lstKelimeler.Name = "lstKelimeler";
+            this.lstKelimeler.Size = new System.Drawing.Size(275, 303);
+            this.lstKelimeler.TabIndex = 39;
+            this.lstKelimeler.SelectedIndexChanged += new System.EventHandler(this.lstKelimeler_SelectedIndexChanged);
             // 
             // KayitliGiris
             // 
@@ -252,25 +254,25 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnIslemSecim);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtAra);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.lblCikis);
+            this.Controls.Add(this.btnCikis);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "KayitliGiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KayitliGiris";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.KayitliGiris_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbResim)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -281,19 +283,19 @@
 
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnIslemSecim;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtAnlam;
+        private System.Windows.Forms.TextBox txtAra;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pbResim;
+        private System.Windows.Forms.Label lblCikis;
+        private System.Windows.Forms.Button btnCikis;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ListBox lstKelimeler;
     }
 }

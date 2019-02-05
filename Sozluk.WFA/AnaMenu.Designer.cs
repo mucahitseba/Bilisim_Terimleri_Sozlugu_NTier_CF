@@ -29,9 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnaMenu));
-            this.dgvKelimeler = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.pbFotograf = new System.Windows.Forms.PictureBox();
+            this.pbResim = new System.Windows.Forms.PictureBox();
             this.txtAra = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblCikis = new System.Windows.Forms.Label();
@@ -45,29 +44,18 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtAnlam = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvKelimeler)).BeginInit();
+            this.lstKelimeler = new System.Windows.Forms.ListBox();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFotograf)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbResim)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgvKelimeler
-            // 
-            this.dgvKelimeler.BackgroundColor = System.Drawing.Color.LightGray;
-            this.dgvKelimeler.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvKelimeler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKelimeler.Location = new System.Drawing.Point(17, 27);
-            this.dgvKelimeler.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvKelimeler.Name = "dgvKelimeler";
-            this.dgvKelimeler.Size = new System.Drawing.Size(255, 311);
-            this.dgvKelimeler.TabIndex = 0;
-            // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.pbFotograf);
+            this.groupBox3.Controls.Add(this.pbResim);
             this.groupBox3.Font = new System.Drawing.Font("Gill Sans MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.groupBox3.Location = new System.Drawing.Point(607, 79);
@@ -79,15 +67,15 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "                  Resim                    ";
             // 
-            // pbFotograf
+            // pbResim
             // 
-            this.pbFotograf.Location = new System.Drawing.Point(12, 49);
-            this.pbFotograf.Margin = new System.Windows.Forms.Padding(4);
-            this.pbFotograf.Name = "pbFotograf";
-            this.pbFotograf.Size = new System.Drawing.Size(261, 207);
-            this.pbFotograf.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbFotograf.TabIndex = 0;
-            this.pbFotograf.TabStop = false;
+            this.pbResim.Location = new System.Drawing.Point(12, 49);
+            this.pbResim.Margin = new System.Windows.Forms.Padding(4);
+            this.pbResim.Name = "pbResim";
+            this.pbResim.Size = new System.Drawing.Size(261, 207);
+            this.pbResim.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbResim.TabIndex = 0;
+            this.pbResim.TabStop = false;
             // 
             // txtAra
             // 
@@ -103,7 +91,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dgvKelimeler);
+            this.groupBox1.Controls.Add(this.lstKelimeler);
             this.groupBox1.Font = new System.Drawing.Font("Gill Sans MT", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.groupBox1.Location = new System.Drawing.Point(15, 79);
@@ -244,6 +232,16 @@
             this.txtAnlam.Size = new System.Drawing.Size(271, 310);
             this.txtAnlam.TabIndex = 0;
             // 
+            // lstKelimeler
+            // 
+            this.lstKelimeler.FormattingEnabled = true;
+            this.lstKelimeler.ItemHeight = 23;
+            this.lstKelimeler.Location = new System.Drawing.Point(7, 29);
+            this.lstKelimeler.Name = "lstKelimeler";
+            this.lstKelimeler.Size = new System.Drawing.Size(275, 303);
+            this.lstKelimeler.TabIndex = 40;
+            this.lstKelimeler.SelectedIndexChanged += new System.EventHandler(this.lstKelimeler_SelectedIndexChanged);
+            // 
             // AnaMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -267,9 +265,9 @@
             this.Name = "AnaMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AnaMenu";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvKelimeler)).EndInit();
+            this.Load += new System.EventHandler(this.AnaMenu_Load);
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbFotograf)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbResim)).EndInit();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -281,10 +279,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dgvKelimeler;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.PictureBox pbFotograf;
+        private System.Windows.Forms.PictureBox pbResim;
         private System.Windows.Forms.TextBox txtAra;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lblCikis;
@@ -298,5 +294,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txtAnlam;
+        private System.Windows.Forms.ListBox lstKelimeler;
     }
 }

@@ -159,6 +159,7 @@
             this.lblCikis.Size = new System.Drawing.Size(17, 17);
             this.lblCikis.TabIndex = 44;
             this.lblCikis.Text = "X";
+            this.lblCikis.Click += new System.EventHandler(this.lblCikis_Click);
             // 
             // KayitOlma
             // 

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblCikis = new System.Windows.Forms.Label();
             this.btnSorgula = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -36,16 +36,16 @@
             this.txtKullaniciAdi = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // label3
+            // lblCikis
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(332, -1);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(17, 17);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "X";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.lblCikis.AutoSize = true;
+            this.lblCikis.Location = new System.Drawing.Point(332, -1);
+            this.lblCikis.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCikis.Name = "lblCikis";
+            this.lblCikis.Size = new System.Drawing.Size(17, 17);
+            this.lblCikis.TabIndex = 11;
+            this.lblCikis.Text = "X";
+            this.lblCikis.Click += new System.EventHandler(this.lblCikis_Click);
             // 
             // btnSorgula
             // 
@@ -101,7 +101,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(348, 177);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblCikis);
             this.Controls.Add(this.btnSorgula);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -118,7 +118,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblCikis;
         private System.Windows.Forms.Button btnSorgula;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

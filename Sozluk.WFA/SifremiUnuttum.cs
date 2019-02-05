@@ -34,7 +34,7 @@ namespace Sozluk.WFA
             }
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void lblCikis_Click(object sender, EventArgs e)
         {
             DialogResult a = MessageBox.Show("Uygulamadan Çıkmak İstediğinize Emin Misiniz?", "Çıkış", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
             if (a == DialogResult.Yes)

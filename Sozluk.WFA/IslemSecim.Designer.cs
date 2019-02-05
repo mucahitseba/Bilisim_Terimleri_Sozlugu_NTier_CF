@@ -45,6 +45,7 @@
             this.btnGeri.TabIndex = 9;
             this.btnGeri.Text = "Geri";
             this.btnGeri.UseVisualStyleBackColor = true;
+            this.btnGeri.Click += new System.EventHandler(this.btnGeri_Click);
             // 
             // lblCikis
             // 
@@ -67,6 +68,7 @@
             this.btnDuzenle.TabIndex = 7;
             this.btnDuzenle.Text = "Düzenle";
             this.btnDuzenle.UseVisualStyleBackColor = true;
+            this.btnDuzenle.Click += new System.EventHandler(this.btnDuzenle_Click);
             // 
             // btnSil
             // 
@@ -78,6 +80,7 @@
             this.btnSil.TabIndex = 6;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnEkle
             // 
@@ -89,6 +92,7 @@
             this.btnEkle.TabIndex = 5;
             this.btnEkle.Text = "Ekle";
             this.btnEkle.UseVisualStyleBackColor = true;
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // IslemSecim
             // 

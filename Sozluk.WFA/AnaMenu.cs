@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Sozluk.BLL.Repository;
+using Sozluk.MODELS.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,6 +37,24 @@ namespace Sozluk.WFA
             Giris giris = new Giris();
             giris.Show();
             this.Hide();
+        }
+
+        private void AnaMenu_Load(object sender, EventArgs e)
+        {
+            KelimeleriGetir();
+        }
+
+        private void KelimeleriGetir()
+        {
+            lstKelimeler.DataSource = new KelimeRepo().GetAll().ToList();
+        }
+
+        private void lstKelimeler_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var kelime = lstKelimeler.SelectedItem as Kelime;
+            txtAnlam.Text = new KelimeRepo().GetById(kelime.KelimeId).SozcukAnlami.ToString();
+            pbResim.Image = Image.FromFile(new KelimeRepo().GetById(kelime.KelimeId).ResimYolu);
+            pbResim.SizeMode = PictureBoxSizeMode.StretchImage;
         }
     }
 }

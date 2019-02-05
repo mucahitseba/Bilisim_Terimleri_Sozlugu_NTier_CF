@@ -64,5 +64,18 @@ namespace Sozluk.WFA
             giris.Show();
             this.Hide();
         }
+
+        private void lblCikis_Click(object sender, EventArgs e)
+        {
+            DialogResult a = MessageBox.Show("Uygulamadan Çıkmak İstediğinize Emin Misiniz?", "Çıkış", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (a == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+            if (a == DialogResult.No)
+            {
+
+            }
+        }
     }
 }

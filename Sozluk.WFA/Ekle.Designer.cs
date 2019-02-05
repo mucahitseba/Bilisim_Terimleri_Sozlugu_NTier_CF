@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblCikis = new System.Windows.Forms.Label();
             this.btnGeri = new System.Windows.Forms.Button();
             this.btnKaydet = new System.Windows.Forms.Button();
             this.btnResimSec = new System.Windows.Forms.Button();
@@ -39,16 +39,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label4
+            // lblCikis
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(291, 9);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(17, 17);
-            this.label4.TabIndex = 37;
-            this.label4.Text = "X";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.lblCikis.AutoSize = true;
+            this.lblCikis.Location = new System.Drawing.Point(291, 9);
+            this.lblCikis.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCikis.Name = "lblCikis";
+            this.lblCikis.Size = new System.Drawing.Size(17, 17);
+            this.lblCikis.TabIndex = 37;
+            this.lblCikis.Text = "X";
+            this.lblCikis.Click += new System.EventHandler(this.lblCikis_Click);
             // 
             // btnGeri
             // 
@@ -139,7 +139,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(323, 375);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblCikis);
             this.Controls.Add(this.btnGeri);
             this.Controls.Add(this.btnKaydet);
             this.Controls.Add(this.btnResimSec);
@@ -159,7 +159,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblCikis;
         private System.Windows.Forms.Button btnGeri;
         private System.Windows.Forms.Button btnKaydet;
         private System.Windows.Forms.Button btnResimSec;
